@@ -12,7 +12,7 @@ Project Member
 **Front end**
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-React is a library of a Javascript
+React is a library of a Javascript.
 
 **Backend**
 
