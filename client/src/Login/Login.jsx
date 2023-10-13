@@ -4,9 +4,14 @@ import logo from '../files/logo/fedlogo.png';
 import {useNavigate} from 'react-router-dom'
 export default function Login() {
 
+ 
   const navigate = useNavigate();
+
   const mentor =()=>{
-    navigate('/mentor_login')
+    navigate('/user/Mentor')
+  }
+  const student =()=>{
+    navigate('/user/Student')
   }
   
   return (
@@ -20,7 +25,7 @@ export default function Login() {
           <div className={login.title}><h1>Mentrix</h1></div>
           <div className={login.selection}>
             <div className={login.text}><p>Are you a</p></div>
-            <div className={login.button}><button>Student</button></div>
+            <div className={login.button}><button onClick={student}>Student</button></div>
             <div className={login.text}><p>or</p></div>
             <div className={login.button}><button onClick={mentor}>Mentor</button></div>
           </div>

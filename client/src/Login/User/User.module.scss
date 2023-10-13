@@ -1,0 +1,120 @@
+.main{
+    display: flex;
+    height: 100vh;
+    .left{
+        width: 50%;
+        background-color: #0372B8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .logo{
+           //// 
+        }
+    }
+    .right{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        .title{
+            color: #000;
+            font-family: JosefinSans_Light;
+            font-size: 22px;
+            font-style: normal;
+            line-height: normal; 
+            
+        }
+        .selection{
+            display: flex;
+                flex-direction: column;
+                gap:25px;
+                padding-bottom: 0rem;
+                align-items: center;
+            .text{
+                font-size: 26px;
+                font-family: JosefinSans_Light;
+                font-weight: 800;
+            }
+            .box{
+                display: flex;
+                flex-direction: column;
+                gap:10px;
+                span{
+                   font-size: 15px;     
+                }
+                input{
+                width: 20rem;
+                height: 2.5rem;
+                border-radius: 5px;
+                border: 1px solid #000;
+                background: #FFF;
+                font-size: 15px;
+                padding: 0px 15px;
+                }
+            }
+            .box1{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+               .loginbtn{
+                width: 8rem;
+                height: 2.5rem;
+                border-radius: 5px;
+                border: 0.5px solid #999;
+                background: #FFF;
+                font-size: 17px;
+                font-family: JosefinSans_Medium;
+                font-weight: 300;
+                cursor: pointer;
+                &:hover{
+                    background: #B7B7B7;
+                    color: #FFF;
+                }
+               }
+               .signupbtn{
+                width: 15rem;
+                height: 2.6rem;
+                border-radius: 5px;
+                border: 0.5px solid #999;
+                background: #FFF;
+                font-size: 15px;
+                font-family: JosefinSans_Medium;
+                font-weight: 300;
+                display: flex;
+                align-items: center;
+                gap:1rem;
+                justify-content: center;
+                cursor: pointer;
+                &:hover{
+                    background: #B7B7B7;
+                    color: #FFF;
+                }
+               
+                
+                img{
+                       width: 18px;
+                        height: 18px;
+                    }
+                     
+                span{
+                  font-size: 15px;      
+                }
+               }   
+            }
+            .switch{
+                font-size: 15px;  
+                cursor: pointer;
+                 &:hover{
+                    color: #0372B8;
+                }
+                }
+            
+            
+        
+        
+        }
+
+    }
+}
