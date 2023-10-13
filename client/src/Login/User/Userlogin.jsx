@@ -14,7 +14,7 @@ function Userlogin() {
       navigate('/login/Student');
     }
     else{
-      navigate('/loginç/Mentor');
+      navigate('/login/Mentor');
     }
     
   }

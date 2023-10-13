@@ -42,3 +42,7 @@
   font-family: JosefinSans_Bold;
   src: url("./files/fonts/Josefin_sans/JosefinSans-Bold.ttf");
 }
+@font-face {
+  font-family: Museuo_700;
+  src: url("./files/fonts/museo-sans/MuseoSans-300.otf");
+}

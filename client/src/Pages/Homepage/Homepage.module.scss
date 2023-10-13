@@ -1,0 +1,43 @@
+ .navbar{
+    background-color:#0372B8 ;
+    display: flex;
+justify-content:space-between;
+padding: 0 50px;
+height: 4em;
+    .first{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        
+        .pp{
+                width: 11rem;
+                height: 3rem;
+            
+            .textlogo{
+                font-size:24px;
+                font-family: Museuo_700;
+                color: white;
+                font-weight: 600;
+            }
+          
+          
+        }
+        
+    }
+    .middle{
+
+    }
+    .last{
+        .img{
+            width: 500px;
+            height: 300px;
+            border-radius: 59990%;
+            object-fit: contain;
+            img{
+                max-width: 100%;
+                max-width: 100%;
+            }
+        }
+
+    }
+ }
