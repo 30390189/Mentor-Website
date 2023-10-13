@@ -18,5 +18,5 @@ React is a library of a Javascript.
 
 Node Js will be used with express js.
 
-MySQL and MongoDB will be used as Database
+Postgres and MongoDB will be used as Database
 
