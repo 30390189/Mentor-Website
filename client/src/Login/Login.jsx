@@ -8,10 +8,11 @@ export default function Login() {
   const navigate = useNavigate();
 
   const mentor =()=>{
-    navigate('/user/Mentor')
+    navigate('/login/Mentor')
   }
+  
   const student =()=>{
-    navigate('/user/Student')
+    navigate('/login/Student')
   }
   
   return (

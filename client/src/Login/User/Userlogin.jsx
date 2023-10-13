@@ -1,12 +1,23 @@
 import React from 'react'
 import logo from '../../files/logo/fedlogo.png';
 import google_logo from '../../files/logo/google.png';
-import { useParams } from 'react-router-dom';
+import { useParams,useNavigate } from 'react-router-dom';
 import user from './User.module.scss'
 
 function Userlogin() {
-
+  const navigate = useNavigate();
   const {users} = useParams();
+
+  
+  const changeuser = ()=>{
+    if(users === "Mentor"){
+      navigate('/login/Student');
+    }
+    else{
+      navigate('/loginç/Mentor');
+    }
+    
+  }
 
   return (
     <div className={user.main}>
@@ -36,7 +47,7 @@ function Userlogin() {
             <span>Sign up with google</span>
             </div>
           </div>
-          <p className={user.switch}>Switch to user</p>
+          <p className={user.switch} onClick={changeuser}>Switch User</p>
 
         
 
