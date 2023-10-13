@@ -1,38 +1,44 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: Inter_Light ;
+  src: url("./files/fonts/Inter/Inter-Light.ttf");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: Inter_Regular;
+  src: url("./files/fonts/Inter/Inter-Regular.ttf");
+}
+@font-face {
+  font-family: Inter_Medium;
+  src: url("./files/fonts/Inter/Inter-Medium.ttf");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: Inter_SemiBold;
+  src: url("./files/fonts/Inter/Inter-SemiBold.ttf");
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
+@font-face {
+  font-family: JosefinSans_Thin;
+  src: url("./files/fonts/Josefin_sans/JosefinSans-Thin.ttf");
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@font-face {
+  font-family: JosefinSans_Light;
+  src: url("./files/fonts/Josefin_sans/JosefinSans-Light.ttf");
+}
+@font-face {
+  font-family: JosefinSans_ExtraLight;
+  src: url("./files/fonts/Josefin_sans/JosefinSans-ExtraLight.ttf");
+}
+@font-face {
+  font-family: JosefinSans_Medium;
+  src: url("./files/fonts/Josefin_sans/JosefinSans-Medium.ttf");
+}
+@font-face {
+  font-family: JosefinSans_SemiBold;
+  src: url("./files/fonts/Josefin_sans/JosefinSans-SemiBold.ttf");
+}
+@font-face {
+  font-family: JosefinSans_Bold;
+  src: url("./files/fonts/Josefin_sans/JosefinSans-Bold.ttf");
 }
