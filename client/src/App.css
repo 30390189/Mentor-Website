@@ -44,5 +44,9 @@
 }
 @font-face {
   font-family: Museuo_700;
-  src: url("./files/fonts/museo-sans/MuseoSans-300.otf");
+  src: url("./files/fonts/museo-sans/MuseoSans_700.otf");
+}
+@font-face {
+  font-family: Museuo_900;
+  src: url("./files/fonts/museo-sans/MuseoSans_900.otf");
 }

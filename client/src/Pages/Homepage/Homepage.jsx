@@ -2,7 +2,7 @@ import React from 'react'
 import home from './Homepage.module.scss'
 import logo from '../../files/logo/fedlogo.png'
 import HomeIcon from '@mui/icons-material/Home';
-import CommentIcon from '@mui/icons-material/Comment';
+import MailIcon from '@mui/icons-material/Mail';
 import profile from '../../files/Images/person.jpg'
 
 function Homepage() {
@@ -11,14 +11,14 @@ function Homepage() {
         <div className={home.navbar}>
             <div className={home.first}>
                <img src={logo} alt='logo'className={home.pp}/>
-                <div className={home.textlogo}><span >x MENTRIX</span></div>
+                <div ><span className={home.textlogo}>x MENTRIX</span></div>
                 </div>
-            <div className={home.middle}><input type='text'/></div>
+            <div className={home.middle}><input type='text' className={home.search} /></div>
             <div className={home.last}>
-                <HomeIcon fontSize='large' sx={{color:"white"}}/>
-                <CommentIcon fontSize='large' sx={{color:"white"}}/>
+                <div><HomeIcon fontSize='large' sx={{color:"white"}}/></div>
+               <div> <MailIcon fontSize='large' sx={{color:"white"}}/></div>
                 <div className={home.img}><img src={profile} alt='profile'/></div>
-                <button>Logout</button>
+                <div><button className={home.buttton}>Logout</button></div>
             </div>
         </div>
         <div className={home.body}>
