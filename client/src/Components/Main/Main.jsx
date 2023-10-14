@@ -21,7 +21,9 @@ function Main() {
                 </div>
             </div>
             <div className={main.description}>Can someone help me to solve this shit</div>
-            <div className={main.image}></div>
+            <div className={main.image}>
+                <img src='' alt='userpost'/>
+            </div>
             <div className={main.btns}></div>
 
         </section>
