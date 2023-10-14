@@ -1,9 +1,6 @@
 import React from 'react'
 import main from './Main.module.scss'
-import s from '../../files/Images/1.jpg'
-import aa from '../../files/Images/aa.png'
-import aaa from '../../files/Images/aaa.png'
-import demo from '../../files/demo.json'
+import demo from '../../files/demo'
 
 
 function Main() {
@@ -20,18 +17,29 @@ function Main() {
                 <button className={main.postbtn}>Post</button>
             </div>
         </div>
-        <section className={main.postbox}>
+        {demo.filter((item)=>{
+            return item.user ==="student";
+        }
+        ).map((data)=>(
+            <section className={main.postbox}>
             <div className={main.userinfo}>
-                <div className={main.userimgbox}><img src={s} alt='userimg'/></div>
+                <div className={main.userimgbox}><img src={data.profilepp} alt='userimg'/></div>
                 <div className={main.username}>
-                    <span className={main.name}>{demo.name}</span>
-                    <span className={main.time}>Posted 5 min ago</span>
+                    <span className={main.name}>{data.name}</span>
+                    <span className={main.time}>Posted {data.posted}</span>
                 </div>
             </div>
-            <div className={main.description}>Can somasdasdasadadseone help me tadadasdasdadasdasdadadsadadadasdasdo solve this shit</div>
+            <div className={main.description}>{data.description}</div>
+            {data.problemimage === "" ? <></>:
+            <>
             <div className={main.image}>
-                <img src={aa} alt='userpost'/>
+                <img src={data.problemimage} alt='userpost'/>
             </div>
+            <hr className={main.line}/>
+            </>
+
+            }
+
             <div className={main.btns}>
                 <div><button className={main.btn}>Help</button></div>
                 <div><button className={main.btn}> Share</button></div>
@@ -39,6 +47,9 @@ function Main() {
             </div>
 
         </section>
+
+        ))}
+        
     </div>
   )
 }

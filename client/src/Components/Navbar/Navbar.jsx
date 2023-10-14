@@ -5,8 +5,13 @@ import HomeIcon from '@mui/icons-material/Home';
 import MailIcon from '@mui/icons-material/Mail';
 import profile from '../../files/Images/person.jpg'
 import SearchIcon from '@mui/icons-material/Search';
+import {useNavigate} from "react-router-dom"
 
 function Navbar() {
+  const navgiate = useNavigate();
+  const logout =()=>{
+    navgiate('/login')
+  }
   return (
     <div>
         <div className={nav.navbar}>
@@ -22,7 +27,7 @@ function Navbar() {
                 <div><HomeIcon fontSize='large' sx={{color:"white"}}/></div>
                <div> <MailIcon fontSize='large' sx={{color:"white"}}/></div>
                 <div className={nav.img}><img src={profile} alt='profile'/></div>
-                <button className={nav.logoutbtn} >Logout</button>
+                <button className={nav.logoutbtn} onClick={logout}>Logout</button>
             </div>
         </div>
         

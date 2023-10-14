@@ -39,7 +39,7 @@ function Userlogin() {
           <input type='password' required/>
         </div>
         <div className={user.box1}>
-          <button className={user.loginbtn}>Login</button>
+          <button className={user.loginbtn} onClick={()=>navigate("/")}>Login</button>
           <p className={user.switch}>Doesn't have account ? Sign up</p>
           <h2>OR</h2>
           <div className={user.signupbtn}>

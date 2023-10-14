@@ -2,11 +2,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
+    cursor: pointer;
     // border: 1px solid red;
     .pp{
-        width: 45px;
-        height: 45px;
+        width: 40px;
+        height: 40px;
         border-radius: 100%;
         overflow: hidden;
 
@@ -17,9 +18,8 @@
         }
     }
     .name{
-        font-family: Inter_Regular;
-        font-size: 18px;
-        font-weight: 600;
+        font-family: Inter_SemiBold;
+        font-size: 17px;
 
     }
 }
