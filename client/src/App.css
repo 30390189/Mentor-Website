@@ -16,6 +16,10 @@
   font-family: Inter_SemiBold;
   src: url("./files/fonts/Inter/Inter-SemiBold.ttf");
 }
+@font-face {
+  font-family: Inter_Bold;
+  src: url("./files/fonts/Inter/Inter-Bold.ttf");
+}
 
 
 @font-face {

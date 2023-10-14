@@ -1,0 +1,24 @@
+.main{
+    display: grid;
+    place-content: center;
+    .btnbox{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-style: none;
+        background-color: white;
+        width: 15rem;
+        height: 3rem;
+        border-radius: 10px;
+        gap: 10px;
+        span{
+            font-family: Inter_SemiBold;
+            font-size: 15px;
+        }
+        &:hover{
+            background-color: #B7B7B7;
+            color:white;
+        }
+
+    }
+}
