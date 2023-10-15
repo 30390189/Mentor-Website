@@ -3,11 +3,19 @@ import logo from '../../files/logo/fedlogo.png';
 import google_logo from '../../files/logo/google.png';
 import { useParams,useNavigate } from 'react-router-dom';
 import user from './User.module.scss'
-
+import  {useDispatch, useSelector} from 'react-redux'
+import { login } from '../../redux-store/login /loginstate';
 function Userlogin() {
   const navigate = useNavigate();
-  const {users} = useParams();
+  const loginss = useSelector((state)=>state.loginstate.value)
+  console.log(loginss)
 
+  const {users} = useParams();
+  const dispatch = useDispatch();
+
+  if(loginss){
+    navigate('/');
+  }
   
   const changeuser = ()=>{
     if(users === "Mentor"){
@@ -39,7 +47,7 @@ function Userlogin() {
           <input type='password' required/>
         </div>
         <div className={user.box1}>
-          <button className={user.loginbtn} onClick={()=>navigate("/")}>Login</button>
+          <button className={user.loginbtn} onClick={()=>dispatch(login())}>Login</button>
           <p className={user.switch}>Doesn't have account ? Sign up</p>
           <h2>OR</h2>
           <div className={user.signupbtn}>

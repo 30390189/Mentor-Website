@@ -6,12 +6,21 @@ import MailIcon from '@mui/icons-material/Mail';
 import profile from '../../files/Images/person.jpg'
 import SearchIcon from '@mui/icons-material/Search';
 import {useNavigate} from "react-router-dom"
+import { useDispatch,useSelector } from 'react-redux';
+import { logout } from '../../redux-store/login /loginstate';
+
 
 function Navbar() {
   const navgiate = useNavigate();
-  const logout =()=>{
-    navgiate('/login')
+  const dispatch = useDispatch()
+  const loo = useSelector((state)=>state.loginstate.value)
+  console.log(loo)
+
+  const logouts =()=>{
+    dispatch(logout())
   }
+
+ 
   return (
     <div>
         <div className={nav.navbar}>
@@ -27,7 +36,7 @@ function Navbar() {
                 <div><HomeIcon  className={nav.HomeIcon}/></div>
                <div> <MailIcon  className={nav.MailIcon}/></div>
                 <div className={nav.img}><img src={profile} alt='profile'/></div>
-                <button className={nav.logoutbtn} onClick={logout}>Logout</button>
+                <button className={nav.logoutbtn} onClick={logouts}>Logout</button>
             </div>
         </div>
         

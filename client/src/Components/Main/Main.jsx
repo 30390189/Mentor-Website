@@ -1,11 +1,17 @@
 import React from 'react'
 import main from './Main.module.scss'
 import demo from '../../files/demo'
+import {useSelector} from "react-redux"
+import { useNavigate } from 'react-router-dom'
 
 
 function Main() {
-
+    const nav = useNavigate();
+    const login = useSelector((state)=>state.loginstate)
     
+    if(!login){
+        nav('/login')
+    }
 
   return (
     <div className={main.main}>
