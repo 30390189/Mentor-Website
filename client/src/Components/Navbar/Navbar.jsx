@@ -24,8 +24,8 @@ function Navbar() {
               <div className={nav.searchlogo}><SearchIcon fontSize='medium'/></div>
             </div>
             <div className={nav.last}>
-                <div><HomeIcon fontSize='large' sx={{color:"white"}}/></div>
-               <div> <MailIcon fontSize='large' sx={{color:"white"}}/></div>
+                <div><HomeIcon  className={nav.HomeIcon}/></div>
+               <div> <MailIcon  className={nav.MailIcon}/></div>
                 <div className={nav.img}><img src={profile} alt='profile'/></div>
                 <button className={nav.logoutbtn} onClick={logout}>Logout</button>
             </div>
