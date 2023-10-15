@@ -15,7 +15,7 @@ function Navbar() {
   return (
     <div>
         <div className={nav.navbar}>
-            <div className={nav.first}>
+            <div className={nav.first} onClick={()=>navgiate("/")}>
                <img src={logo} alt='logo'className={nav.pp}/>
                 <div ><span className={nav.textlogo}>x MENTRIX</span></div>
                 </div>

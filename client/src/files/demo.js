@@ -4,7 +4,7 @@ const demo = [
     profilepp:"https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?cs=srgb&dl=pexels-justin-shaifer-1222271.jpg&fm=jpg",
     name:"Natrong ding",
     posted:"10 min ago",
-    description:"Can someone helo me with this",
+    description:"Can someone help me with this ?",
     problemimage:"https://i.stack.imgur.com/2NlyA.png"
     },
     {
@@ -13,7 +13,7 @@ const demo = [
      name:"Injaic padwin",
      posted:"20 min ago",
      description:"I need help with this",
-     problemimage:"https://i.stack.imgur.com/2NlyA.png"
+     problemimage:"https://a1stem.com/wp-content/uploads/2022/08/IB-Computer-Science-More-Problem-Solving-3-768x551.png"
     },
     {
         user:"student",

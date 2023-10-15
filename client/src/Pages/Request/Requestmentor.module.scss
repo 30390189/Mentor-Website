@@ -1,0 +1,98 @@
+.main{
+    
+    .navbar{
+
+    }
+    .body{
+        display: flex;
+        background-color: #F3F3F3;
+        padding: 1rem 1rem;
+
+        .left{
+            flex: 1;
+        }
+        .mid{
+            flex: 2;
+            .box{
+                display: flex;
+                align-items: center;
+                padding: 0px 2.5rem;
+                background-color: #ffffff;
+                border-radius: 10px;
+                height: 7rem;
+                margin-bottom: 10px;
+
+                .firstbox{
+                    // border: 1px solid red;
+                    flex:40%;
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                
+                .imgbox{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+
+                    }
+                }
+                .namebox{
+                    display: flex;
+                    flex-direction: column;
+                    .name{
+                        font-family: Inter_SemiBold;
+                        font-size: 15px;
+                    }
+                    .study{
+                        font-family: Inter_Light;
+                        font-size: 13px;    
+                    }
+                }
+            }
+                .major{
+                    // border: 1px solid red;
+                    flex:30%;
+
+                    display: grid;
+                    grid-template-columns: repeat(2,6rem);
+                    row-gap: 5px;
+                    .major_name{
+                        font-family: Inter_Light;
+                        font-size: 13px;
+                    }
+
+                }
+                .btnbox{
+                    flex:20%;
+                    // border: 1px solid red;
+                    display: grid;
+                    place-content: center;
+                    button{
+                        border-style: none;
+                        width: 6rem;
+                        height: 2.5rem;
+                        background-color: white;
+                        border-radius: 10px;
+                        border: 0.5px solid #D6D6D6;
+                        cursor: pointer;
+                        &:hover{
+                            background-color: #B7B7B7;
+                            color: white;
+                        }
+                    }
+
+                }
+
+
+            }
+        }
+        .right{
+            flex: 1;
+        }
+    }
+}
